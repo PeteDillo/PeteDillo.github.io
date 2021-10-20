@@ -1,8 +1,90 @@
-
-#menuList {
-    background-color: aqua;
+#menuList{
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.navbar {
-font: optional;
+.social-links img{
+    height: 35px;
+    margin: 20px;
+    cursor: pointer;
+}
+.social-links{
+    text-align: center;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    color: #003563;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 35px;
+}
+.col-1 h1{
+    font-size: 54px;
+}
+.col-1 h2{
+    font-size: 25px;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 h3{
+    font-size: 17px;
+    font-weight: 100;
+    margin-left: 20px;
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .software{
+    width: 100%;
+}
+
+footer{
+    font-size: 12px;
+    height: 13px;
+    margin: 10px;
+    text-align: center;
 }
